@@ -106,3 +106,12 @@ font-family: quicksand;
 .Demandez-Devis{
     padding-top: 30px;
 }
+.venue{
+    background: #ffffff !important;
+}
+.contact-form h5{
+    padding: 10px 26px;
+}
+.custom-form .form-control {
+    background: #F3F3F3 !important;
+}

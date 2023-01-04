@@ -15,3 +15,94 @@ height: 691px;
 .hero::after{
     background:none !important
 }
+
+.img_center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.icon_title{
+    padding-top: 10%;
+    text-align: center;
+    color: #393D6C;
+}
+.bleu_color{
+    color: #393D6C;
+}
+.title_pf{
+    text-align: center;
+}
+.section-padding {
+    padding-top: 30px !important;
+    padding-bottom: 20px !important;
+}
+.row-padding{
+    padding-bottom: 4%;
+}
+.title_color{
+   color: #b35b45;
+}
+.title_color_with{
+    color: #fff;
+}
+.speakers{
+    background: #F3F3F3 !important;
+}
+
+@font-face {
+    font-family: quicksand;
+    src: url("../fonts/static/Quicksand-Bold.ttf");
+  }
+
+.quicksand-font{
+font-family: quicksand;
+}
+
+.section_4_background{
+    background-image: url("../images/C1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.expertise{
+    float: right !important;
+    background-color: #E5EAF2;
+    width: 30%;
+    opacity: 0.9;
+}
+.expertise_title{
+    margin: 3%; 
+}
+.expertise_row{
+    margin-top: -30px;
+}
+.principaux_clients{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.principaux_clients span{
+
+}
+.padding-logos{
+    padding-bottom: 34px;
+}
+#section_5{
+    background-image: url("../images/Offres_Bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pricing-title-wrap-june{
+    background: #dcc269 !important;
+}
+.pricing-title-wrap-read{
+    background: #d96943 !important;
+}
+
+.pricing-title-wrap-blue{
+    background: #6e7bc5 !important;
+}
+.Demandez-Devis{
+    padding-top: 30px;
+}

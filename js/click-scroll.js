@@ -1,33 +1,44 @@
 //jquery-click-scroll
 //by syamsul'isul' Arifin
 
-var sectionArray = [1, 2, 3, 4, 5, 6, 7];
+var sectionArray = [1, 2, 3, 4, 5, 6,7];
 
 $.each(sectionArray, function(index, value){
           
-     $(document).scroll(function(){
-         var offsetSection = $('#' + 'section_' + value).offset().top - 84;
-         var docScroll = $(document).scrollTop();
-         var docScroll1 = docScroll + 1;
+    //  $(document).scroll(function(){
+    //      var offsetSection = $('#' + 'section_' + value).offset().top - 84;
+    //      var docScroll = $(document).scrollTop();
+    //      var docScroll1 = docScroll + 1;
          
         
-         if ( docScroll1 >= offsetSection ){
-             $('.navbar-nav .nav-item .nav-link').removeClass('active');
-             $('.navbar-nav .nav-item .nav-link:link').addClass('inactive');  
-             $('.navbar-nav .nav-item .nav-link').eq(index).addClass('active');
-             $('.navbar-nav .nav-item .nav-link').eq(index).removeClass('inactive');
-         }
+    //      if ( docScroll1 >= offsetSection ){
+    //          $('.navbar-nav .nav-item .nav-link').removeClass('active');
+    //          $('.navbar-nav .nav-item .nav-link:link').addClass('inactive');  
+    //          $('.navbar-nav .nav-item .nav-link').eq(index).addClass('active');
+    //          $('.navbar-nav .nav-item .nav-link').eq(index).removeClass('inactive');
+    //      }
          
-     });
+    //  });
     
+    // $('.click-scroll').eq(index).click(function(e){
+    //     var offsetClick = $('#' + 'section_' + value).offset().top - 84;
+    //     e.preventDefault();
+    //     $('html, body').animate({
+    //         'scrollTop':offsetClick
+    //     }, 300)
+    // });
     $('.click-scroll').eq(index).click(function(e){
-        var offsetClick = $('#' + 'section_' + value).offset().top - 84;
-        e.preventDefault();
-        $('html, body').animate({
-            'scrollTop':offsetClick
-        }, 300)
+        e.preventDefault(); // prevents default scrolling
+        var y = $(this.hash).offset().top; // grabs the #id element offset location
+        $('html,body').animate({scrollTop: y}, 300); // animate the scroll
     });
     
+});
+
+$("#go_to_contact").click(function() {
+    $('html, body').animate({
+        scrollTop: parseInt($("#section_6").offset().top)
+    }, 100);
 });
 
 $(document).ready(function(){
